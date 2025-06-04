@@ -15,7 +15,7 @@ export default function Navbar() {
                     <span>PubCrawlZadar</span>
                 </div>
                 <div className="hidden md:flex items-center gap-4 uppercase ">
-                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#home">About Us</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#home">Home</Link>
                     <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#about">Stops</Link>
                     <Link className="rounded-full p-2 px-4 bg-[#1AB3E6]" href="#contact">Contact</Link>
                 </div>
@@ -28,8 +28,8 @@ export default function Navbar() {
                     <div className="absolute top-20 right-5 bg-neutral-800 text-neutral-50 shadow-lg rounded-lg w-48 z-50 md:hidden">
                         <nav className='flex flex-col items-start border-bottom '>
                             <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#home">Home</Link>
-                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#home">Stops</Link>
-                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#home">Contact</Link>
+                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#stops">Stops</Link>
+                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#contact">Contact</Link>
                         </nav>
                     </div>
                 )}
