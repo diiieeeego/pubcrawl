@@ -1,12 +1,25 @@
 "use client"
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
 import Image from "next/image"
 import Link from "next/link"
+
 export default function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => setIsOpen(!isOpen);
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+        // Toggle body scroll
+        document.body.style.overflow = !isOpen ? 'hidden' : 'auto';
+    };
+
+    // Cleanup scroll lock when component unmounts
+    useEffect(() => {
+        return () => {
+            document.body.style.overflow = 'auto';
+        };
+    }, []);
+
     return (
         <nav className="w-full absolute top-0 left-0 bg-none">
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
@@ -20,19 +33,52 @@ export default function Navbar() {
                     <Link className="rounded-full p-2 px-4 bg-[#1AB3E6]" href="#contact">Contact</Link>
                 </div>
                 <div className="md:hidden relative">
-                    <button onClick={toggleMenu} className="text-3xl p-2">
+                    <button onClick={toggleMenu} className="text-3xl p-2 text-white">
                         {isOpen ? <FiX /> : <FiMenu />}
                     </button>
                 </div>
+                {/* Overlay */}
                 {isOpen && (
-                    <div className="absolute top-20 right-5 bg-neutral-800 text-neutral-50 shadow-lg rounded-lg w-48 z-50 md:hidden">
-                        <nav className='flex flex-col items-start border-bottom '>
-                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#home">Home</Link>
-                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#stops">Stops</Link>
-                            <Link className='w-full p-2 hover:bg-[#1AB3E6] rounded-lg' href="#contact">Contact</Link>
-                        </nav>
-                    </div>
+                    <div 
+                        className="fixed inset-0 bg-black/50 z-40 md:hidden"
+                        onClick={toggleMenu}
+                    />
                 )}
+                {/* Sliding Menu */}
+                <div 
+                    className={`fixed top-0 right-0 h-full w-64 bg-neutral-800 text-neutral-50 shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+                        isOpen ? 'translate-x-0' : 'translate-x-full'
+                    }`}
+                >
+                    <div className="p-4">
+                        <button onClick={toggleMenu} className="text-3xl p-2 text-white float-right">
+                            <FiX />
+                        </button>
+                    </div>
+                    <nav className='flex flex-col items-start mt-16'>
+                        <Link 
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                            href="#home"
+                            onClick={toggleMenu}
+                        >
+                            Home
+                        </Link>
+                        <Link 
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                            href="#stops"
+                            onClick={toggleMenu}
+                        >
+                            Stops
+                        </Link>
+                        <Link 
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                            href="#contact"
+                            onClick={toggleMenu}
+                        >
+                            Contact
+                        </Link>
+                    </nav>
+                </div>
             </div>
         </nav>
     )
