@@ -32,7 +32,7 @@ export default function Navbar() {
                         draggable={false}
                         priority    
                     />
-                    <span>PubCrawlZadar</span>
+                    
                 </div>
                 <div className="hidden md:flex items-center gap-4 uppercase ">
                     <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="/">Home</Link>
