@@ -1,6 +1,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi';
+import { FaInstagram, FaTiktok, FaTripadvisor, FaFacebookF } from 'react-icons/fa';
 import Image from "next/image"
 import Link from "next/link"
 
@@ -24,15 +25,15 @@ export default function Navbar() {
         <nav className="w-full absolute top-0 left-0 bg-none">
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
                 <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
-                    <Image 
-                        src={"/logo1.png"} 
-                        alt={"logo"} 
-                        width={75} 
-                        height={75} 
+                    <Image
+                        src={"/logo1.png"}
+                        alt={"logo"}
+                        width={75}
+                        height={75}
                         draggable={false}
-                        priority    
+                        priority
                     />
-                    
+                    <span>PubCrawlZadar</span>
                 </div>
                 <div className="hidden md:flex items-center gap-4 uppercase ">
                     <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="/">Home</Link>
@@ -40,51 +41,89 @@ export default function Navbar() {
                     <Link className="rounded-full p-2 px-4 bg-[#1AB3E6] text-neutral-800" href="#contact">Contact</Link>
                 </div>
                 <div className="md:hidden relative">
-                    <button onClick={toggleMenu} className="text-3xl p-2 text-white cursor-pointer">
+                    <button onClick={toggleMenu} className="text-3xl p-2 text-white">
                         {isOpen ? <FiX /> : <FiMenu />}
                     </button>
                 </div>
                 {/* Overlay */}
                 {isOpen && (
-                    <div 
+                    <div
                         className="fixed inset-0 bg-black/50 z-40 md:hidden"
                         onClick={toggleMenu}
                     />
                 )}
                 {/* Sliding Menu */}
-                <div 
-                    className={`fixed top-0 right-0 h-full w-64 pt-10 bg-neutral-800 text-neutral-50 shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
-                        isOpen ? 'translate-x-0' : 'translate-x-full'
-                    }`}
+                <div
+                    className={`fixed top-0 right-0 h-full w-64 bg-neutral-800 text-neutral-50 shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : 'translate-x-full'
+                        }`}
                 >
-                    <div className="p-4">
+                    <div className="p-4 mt-10">
                         <button onClick={toggleMenu} className="text-3xl p-2 text-white float-right">
                             <FiX />
                         </button>
                     </div>
                     <nav className='flex flex-col items-start mt-16'>
-                        <Link 
-                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                        <Link
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'
                             href="/"
                             onClick={toggleMenu}
                         >
                             Home
                         </Link>
-                        <Link 
-                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                        <Link
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'
                             href="#stops"
                             onClick={toggleMenu}
                         >
                             Stops
                         </Link>
-                        <Link 
-                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
+                        <Link
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'
                             href="#contact"
                             onClick={toggleMenu}
                         >
                             Contact
                         </Link>
                     </nav>
+                    {/* Social Icons */}
+                    <div className='text-center mt-16'>
+                        <span className='font-bold text-xl'>Follow Us</span>
+
+                        <div className="flex justify-center gap-6 mt-8">
+                            <a
+                                href="https://instagram.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
+                            >
+                                <FaInstagram />
+                            </a>
+                            <a
+                                href="https://tiktok.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
+                            >
+                                <FaTiktok />
+                            </a>
+                            <a
+                                href="https://tripadvisor.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
+                            >
+                                <FaTripadvisor />
+                            </a>
+                            <a
+                                href="https://facebook.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
+                            >
+                                <FaFacebookF />
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </nav>

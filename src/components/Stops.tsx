@@ -14,6 +14,9 @@ export default function Stops() {
                     <span>1. stop</span>
                     <BsArrowDownCircle className="" size={32} />
                 </Link>
+                <span className="w-screen p-2 bg-[#1AB3E6] absolute top-10 md:top-20 -left-2 rotate-5 font-bold uppercase text-neutral-900 text-md md:text-3xl text-center shadow-xl px-10 md:pe-30">
+                every friday & saturday 
+                </span>
             </div>
         </section>
     )
