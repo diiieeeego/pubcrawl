@@ -23,14 +23,21 @@ export default function Navbar() {
     return (
         <nav className="w-full absolute top-0 left-0 bg-none">
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
-                <div className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
-                    <Image src={"./vercel.svg"} alt={"logo"} width={50} height={50} />
+                <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
+                    <Image 
+                        src={"/logo1.png"} 
+                        alt={"logo"} 
+                        width={75} 
+                        height={75} 
+                        draggable={false}
+                        priority    
+                    />
                     <span>PubCrawlZadar</span>
                 </div>
                 <div className="hidden md:flex items-center gap-4 uppercase ">
-                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#home">Home</Link>
-                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#about">Stops</Link>
-                    <Link className="rounded-full p-2 px-4 bg-[#1AB3E6]" href="#contact">Contact</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="/">Home</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#stops">Stops</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#1AB3E6] text-neutral-800" href="#contact">Contact</Link>
                 </div>
                 <div className="md:hidden relative">
                     <button onClick={toggleMenu} className="text-3xl p-2 text-white">
@@ -58,7 +65,7 @@ export default function Navbar() {
                     <nav className='flex flex-col items-start mt-16'>
                         <Link 
                             className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200' 
-                            href="#home"
+                            href="/"
                             onClick={toggleMenu}
                         >
                             Home
