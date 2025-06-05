@@ -4,12 +4,12 @@ import {MoveRight} from "lucide-react"
 export default function Stop1(){
     return(
         <>
-        <div id="stop1" className="max-w-6xl mx-auto space-y-8 py-16">
+        <div id="stop1" className="max-w-6xl mx-auto space-y-8 py-32">
         <div className="flex flex-wrap gap-4 items-start justify-between px-5">
           <Image  
             src={"/stop1.jpg"}
-            width={150}
-            height={300}
+            width={200}
+            height={400}
             alt={"stop1"}
             className="rounded-lg rotate-10 sm:translate-x-10 mx-auto md:mx-0"
           />
