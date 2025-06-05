@@ -3,7 +3,7 @@ import Link from "next/link"
 import { BsArrowDownCircle } from "react-icons/bs"
 export default function Stops() {
     return (
-        <section id="stops" className="max-w-6xl mx-auto py-16 sm:py-32 px-5">
+        <section id="stops" className="max-w-6xl mx-auto py-32 px-5">
             <h1 className="text-4xl font-bold text-neutral-50 mb-8 text-start sm:text-center">Our Stops</h1>
             <p className="max-w-2xl me-auto mb-16 sm:mx-auto text-start sm:text-center">
                 Pub Crawl Crew from Zadar is your ticket to a wild and wacky night out! Join this fun-loving crew to hit the best bars and clubs, score awesome drink specials, play hilarious games, and meet a bunch of new party pals. Whether you&apos;re a tourist or a local, get ready for a night of crazy fun and unforgettable shenanigans!
