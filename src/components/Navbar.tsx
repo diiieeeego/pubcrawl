@@ -40,7 +40,7 @@ export default function Navbar() {
                     <Link className="rounded-full p-2 px-4 bg-[#1AB3E6] text-neutral-800" href="#contact">Contact</Link>
                 </div>
                 <div className="md:hidden relative">
-                    <button onClick={toggleMenu} className="text-3xl p-2 text-white">
+                    <button onClick={toggleMenu} className="text-3xl p-2 text-white cursor-pointer">
                         {isOpen ? <FiX /> : <FiMenu />}
                     </button>
                 </div>
@@ -53,7 +53,7 @@ export default function Navbar() {
                 )}
                 {/* Sliding Menu */}
                 <div 
-                    className={`fixed top-0 right-0 h-full w-64 bg-neutral-800 text-neutral-50 shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
+                    className={`fixed top-0 right-0 h-full w-64 pt-10 bg-neutral-800 text-neutral-50 shadow-lg z-50 md:hidden transform transition-transform duration-300 ease-in-out ${
                         isOpen ? 'translate-x-0' : 'translate-x-full'
                     }`}
                 >
