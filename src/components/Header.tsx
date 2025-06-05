@@ -5,7 +5,7 @@ import Schedule from "./Schedule"
 export default function Header() {
     return (
         <div className="w-full h-screen bg-[url('/herobg.webp')] bg-cover bg-no-repeat bg-center">
-            <section className=" max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 pt-50">
+            <section className=" max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 pt-40">
                 <div className="px-5">
                     <h1 className="text-5xl md:text-7xl font-bold w-full sm:text-start">THE BEST <br /> PARTY CREW <br /> <span className="font-light text-4xl md:text-6xl">IN ZADAR</span></h1>
                     <div className="mt-5 flex flex-wrap items-center gap-4">
@@ -20,8 +20,8 @@ export default function Header() {
                 </div>
 
             </section>
-            <Link href="#stops" className="absolute bottom-10  left-1/2 -translate-x-1/2 bounce flex flex-col gap-2 items-center">
-                <span>See More</span>
+            <Link href="#stops" className="w-full bounce flex flex-col gap-2 items-center mt-10 md:absolute md:bottom-10">
+                <span >See More</span>
                 <BsArrowDownCircle className="" size={32} />
             </Link>
         </div>
