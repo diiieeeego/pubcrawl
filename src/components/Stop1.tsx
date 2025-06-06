@@ -24,12 +24,12 @@ export default function Stop1() {
                 </div>
 
                 {/* Content Overlay */}
-                <div className="relative z-10 w-full md:w-2/3 py-16 px-5">
+                <div className="relative z-10 w-full md:w-2/3 py-16">
                     <span className="inline-block rounded-full px-5 py-2 bg-red-500/80 text-neutral-50 text-lg font-bold">STOP 1</span>
                     <h1 className="text-4xl md:text-7xl font-bold text-neutral-50 my-8 text-shadow">
                         OPEN BAR
                     </h1>
-                    <p>
+                    <p className="text-lg md:text-xl">
                         At the first stop with Pub Crawl Crew from Zadar, get ready for an epic start to your night with a 60-minute open bar! Enjoy unlimited drinks from a specially curated list, ensuring everyone finds their favorite beverage to kick off the fun. Cheers to an unforgettable night!
                     </p>
                     <Link href="/drinks" className="flex items-center gap-2 hover:underline text-[#1ab3e6]/80 mt-4">

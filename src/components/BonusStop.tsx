@@ -7,7 +7,7 @@ export default function BonusStop() {
                 <h1 className="text-4xl md:text-7xl font-bold text-neutral-50 my-8 xs:mt-0 text-shadow text-start">
                     FREE <br /> BREAKFAST
                 </h1>
-                <p className="w-full md:w-2/3 me-auto">
+                <p className="w-full md:w-2/3 me-auto text-lg md:text-xl">
                 For a bonus stop the next morning, head over to &apos;La Pegla&apos; Grill & Restaurant, where you can indulge in a complimentary breakfast to help ease that hangover from the epic night out with the Pub Crawl Zadar.
                 </p>
             </div>

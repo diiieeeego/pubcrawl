@@ -27,15 +27,17 @@ export default function Gallery(){
       </div>
 
       <div className="relative max-w-5xl mx-auto overflow-hidden rounded-xl">
-        <Image
-          src={"/gallery1.webp"}
-          alt={"Gallery preview"}
-          className="w-full object-cover rounded-xl"
-          fill
-        />
+        <div className="relative w-full h-[400px] md:h-[600px]">
+          <Image
+            src={"/gallery1.webp"}
+            alt={"Gallery preview"}
+            className="w-full rounded-xl object-cover"
+            fill
+          />
+        </div>
 
         <button
-          className=" cursor-pointer absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 p-2 rounded-full flex items-center justify-center"
+          className="cursor-pointer absolute top-1/2 left-4 transform -translate-y-1/2 bg-white bg-opacity-30 hover:bg-opacity-50 p-2 rounded-full flex items-center justify-center"
           aria-label="Previous image"
         >
           <ChevronLeft className="text-neutral-800/80 hover:scale-[1.1]" />

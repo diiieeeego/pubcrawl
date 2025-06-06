@@ -21,7 +21,7 @@ export default function Contact(){
         // Implement form submission logic here
       };
     return(
-        <section className="text-white py-20 px-4 md:px-20">
+        <section id="contact" className="text-white py-20 px-4 md:px-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-5xl font-bold uppercase mb-4 text-center">
           Contact <br /> <span className="text-white">Us</span>

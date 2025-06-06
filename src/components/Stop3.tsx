@@ -6,7 +6,7 @@ export default function Stop3() {
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-neutral-50 my-8 xs:mt-0 text-shadow">
                     SKIPPING <br /> LINE AT <br /> THE CLUB
                 </h1>
-                <p className="w-full md:w-2/3 lg:w-full">
+                <p className="w-full md:w-2/3 lg:w-full text-lg md:text-xl mb-10">
                     A variety of world-class music performed by renowned Djs, attractive dancers and friendly staff, generate a perfect nightlife experience in a fascinating club interior at the very heart of Zadar.
                 </p>
             </div>
