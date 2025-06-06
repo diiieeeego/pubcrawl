@@ -28,7 +28,7 @@ export default function Contact(){
         </h2>
         <div className="flex flex-col md:flex-row md:justify-between text-gray-300 mb-10">
           <p className="max-w-md">
-            Feel free to contact us if you have any questions! We're here to help make your experience in Zadar as awesome as possible.
+            Feel free to contact us if you have any questions! We&apos;re here to help make your experience in Zadar as awesome as possible.
           </p>
           <div className="mt-4 md:mt-0 text-left">
             <p>Phone: <a href="tel:+385997729401" className="text-neutral-400 underline">+385 99 7729 401</a></p>

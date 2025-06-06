@@ -2,6 +2,7 @@ import { FaFacebookF } from 'react-icons/fa';
 import { FaTripadvisor } from 'react-icons/fa';
 import { FaInstagram } from 'react-icons/fa';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
 
 export default function Gallery(){
     return(
@@ -26,10 +27,11 @@ export default function Gallery(){
       </div>
 
       <div className="relative max-w-5xl mx-auto overflow-hidden rounded-xl">
-        <img
-          src="/gallery1.webp"
-          alt="Gallery preview"
+        <Image
+          src={"/gallery1.webp"}
+          alt={"Gallery preview"}
           className="w-full object-cover rounded-xl"
+          fill
         />
 
         <button
