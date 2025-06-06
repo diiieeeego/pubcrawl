@@ -1,7 +1,7 @@
 import Image from "next/image"
 export default function Details() {
     return (
-        <section className="max-w-6xl mx-auto text-white py-12 px-5">
+        <section className="max-w-6xl mx-auto text-white pt-12 px-5">
       <div className="flex flex-col md:flex-row items-start md:items-start md:gap-10 overflow-x-hidden">
         {/* Left Image */}
         <div className="w-full md:w-1/3 h-150 relative ">
