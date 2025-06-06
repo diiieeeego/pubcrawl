@@ -1,10 +1,10 @@
 import Image from "next/image"
 export default function Details() {
     return (
-        <section className="max-w-6xl mx-auto text-white pt-12 px-5">
+        <section className="max-w-6xl mx-auto text-white md:pt-12 px-5">
       <div className="flex flex-col md:flex-row items-start md:items-start md:gap-10 overflow-x-hidden">
         {/* Left Image */}
-        <div className="w-full md:w-1/3 h-150 relative ">
+        <div className="w-full md:w-1/3 h-150 relative translate-y-30 md:translate-y-0">
           <Image
             src="/details.jpg" // Replace with your image path
             alt="Party scene"
@@ -16,7 +16,7 @@ export default function Details() {
         </div>
 
         {/* Right Text */}
-        <div className="w-full md:w-2/3 space-y-8 -translate-y-60 md:translate-y-0">
+        <div className="w-full md:w-2/3 space-y-8 -translate-y-30 md:translate-y-0">
           <h2 className="text-5xl md:text-8xl font-extrabold leading-tight">
             THE <br /> DETAILS
           </h2>
