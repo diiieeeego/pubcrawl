@@ -4,10 +4,10 @@ import Schedule from "./Schedule"
 
 export default function Header() {
     return (
-        <div className="w-full h-screen bg-[url('/herobg.webp')] bg-cover bg-no-repeat bg-center">
+        <div className="w-full h-fit bg-[url('/herobg.webp')] bg-cover bg-no-repeat bg-center">
             <section className=" max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4 pt-40 lg:pt-60">
                 <div className="px-5">
-                    <h1 className="text-5xl md:text-7xl font-bold w-full sm:text-start">THE BEST <br /> PARTY CREW <br /> <span className="font-light text-4xl md:text-6xl">IN ZADAR</span></h1>
+                    <h1 className="text-5xl lg:text-7xl font-bold w-full sm:text-start">THE BEST <br /> PARTY CREW <br /> <span className="font-light text-4xl md:text-6xl">IN ZADAR</span></h1>
                     <div className="mt-5 flex flex-wrap items-center gap-4">
                         <span className="rounded-full px-4 py-2 bg-neutral-800/70 text-neutral-50">2 BARS</span>
                         <span className="rounded-full px-4 py-2 bg-neutral-800/70 text-neutral-50">1 CLUB</span>
@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
 
             </section>
-            <Link href="#stops" className="w-full bounce flex flex-col gap-2 items-center mt-10 lg:absolute lg:bottom-20">
+            <Link href="#stops" className="w-full bounce flex flex-col gap-2 items-center mt-10">
                 <span >See More</span>
                 <BsArrowDownCircle className="" size={32} />
             </Link>
