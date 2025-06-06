@@ -27,7 +27,7 @@ export default function Gallery(){
 
       <div className="relative max-w-5xl mx-auto overflow-hidden rounded-xl">
         <img
-          src="/gallery1.jpg"
+          src="/gallery1.webp"
           alt="Gallery preview"
           className="w-full object-cover rounded-xl"
         />
