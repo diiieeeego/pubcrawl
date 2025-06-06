@@ -2,6 +2,9 @@ import Header from "@/components/Header";
 import Stops from "@/components/Stops";
 import Stop1 from "@/components/Stop1"
 import Stop2 from "@/components/Stop2";
+import Stop3 from "@/components/Stop3";
+import BonusStop from "@/components/BonusStop";
+import Details from "@/components/Details";
 export default function Home() {
   return (
     <div className="bg-[#231F20]">
@@ -9,6 +12,9 @@ export default function Home() {
       <Stops />
       <Stop1 />
       <Stop2 />
+      <Stop3 />
+      <BonusStop />
+      <Details />
     </div>
   );
 }

@@ -6,8 +6,8 @@ import Image from 'next/image';
 
 export default function Footer(){
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-6 md:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-10">
+    <footer className="bg-gray-900 text-gray-300 py-10 px-5 lg:px-20">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
         
         {/* Logo & Message */}
         <div>
@@ -54,7 +54,7 @@ export default function Footer(){
         <div>
           <h4 className="text-white font-semibold mb-4">Stay Connected</h4>
           <p className="text-sm mb-2">Subscribe to get the latest updates and offers.</p>
-          <form className="flex flex-col sm:flex-row items-center gap-2">
+          <form className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-2">
             <input
               type="email"
               placeholder="Your email"

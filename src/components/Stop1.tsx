@@ -3,19 +3,19 @@ import Link from "next/link"
 import {MoveRight} from "lucide-react"
 export default function Stop1(){
     return(
-        <>
-        <div id="stop1" className="max-w-6xl mx-auto space-y-8 pb-32 md:py-32">
-        <div className="flex flex-wrap gap-4 items-start justify-between px-5">
+        <section id="stop1" className="">
+        <div  className="max-w-6xl mx-auto space-y-8 ">
+        <div className="h-fit pb-32 md:py-32 flex flex-wrap gap-4 items-start justify-between px-5 overflow-x-hidden">
           <Image  
             src={"/stop1.jpg"}
             width={200}
             height={400}
             alt={"stop1"}
-            className="rounded-lg -rotate-20 md:rotate-10 sm:translate-x-10 translate-y-20 md:translate-y-0 mx-auto md:mx-0"
+            className="rounded-lg -rotate-20 md:rotate-10 sm:translate-x-10 translate-y-30 mx-auto md:mx-0"
           />
-          <div className=" sm:w-1/2 md:2/3 sm:mx-20 z-[999]">
+          <div className="sm:w-1/2 md:2/3 sm:mx-20 z-[999]">
             <span className="rounded-full px-5 py-2 bg-red-500/80 text-neutral-50 text-lg font-bold">STOP 1</span>
-            <h1 className="text-4xl md:text-7xl font-bold text-neutral-50 my-8 xs:mt-0 text-shadow">
+            <h1 className="text-4xl md:text-7xl font-bold text-neutral-50 my-8 text-shadow">
               OPEN BAR
             </h1>
             <p>
@@ -26,6 +26,6 @@ export default function Stop1(){
         </div>
 
       </div>
-        </>
+        </section>
     )
 }
