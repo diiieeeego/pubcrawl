@@ -5,6 +5,8 @@ import Stop2 from "@/components/Stop2";
 import Stop3 from "@/components/Stop3";
 import BonusStop from "@/components/BonusStop";
 import Details from "@/components/Details";
+import Contact from "@/components/Contact";
+import Gallery from "@/components/Gallery";
 export default function Home() {
   return (
     <div className="bg-[#231F20]">
@@ -15,6 +17,8 @@ export default function Home() {
       <Stop3 />
       <BonusStop />
       <Details />
+      <Contact />
+      <Gallery />
     </div>
   );
 }

@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Footer(){
   return (
-    <footer className="bg-gray-900 text-gray-300 py-10 px-5 lg:px-20">
+    <footer className="bg-[#231F20] text-gray-300 py-10 px-5 lg:px-20">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
         
         {/* Logo & Message */}

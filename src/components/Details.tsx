@@ -1,6 +1,7 @@
 import Image from "next/image"
 export default function Details() {
     return (
+        <>
         <section className="max-w-6xl mx-auto text-white md:pt-12 px-5">
       <div className="flex flex-col md:flex-row items-start md:items-start md:gap-10 overflow-x-hidden">
         {/* Left Image */}
@@ -17,7 +18,7 @@ export default function Details() {
 
         {/* Right Text */}
         <div className="w-full md:w-2/3 space-y-8 -translate-y-30 md:translate-y-0">
-          <h2 className="text-5xl md:text-8xl font-extrabold leading-tight">
+          <h2 className="text-5xl md:text-7xl font-extrabold leading-tight">
             THE <br /> DETAILS
           </h2>
 
@@ -48,5 +49,16 @@ export default function Details() {
         </div>
       </div>
     </section>
+    <div className="w-full h-[450px]">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d671.0584250893744!2d15.223486749695995!3d44.115251108643626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa6de8461883%3A0x6a0096312587a124!2sRimski%20forum%2C%20Zadar!5e0!3m2!1shr!2shr!4v1749210796703!5m2!1shr!2shr" 
+        className="w-full h-full"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+    </>
     )
 }
