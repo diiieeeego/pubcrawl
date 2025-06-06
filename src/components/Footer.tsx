@@ -12,7 +12,7 @@ export default function Footer(){
         {/* Logo & Message */}
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Image src="/PClogo.png" alt="Logo" width={40} height={40} />
+            <Image src="/logoPC.png" alt="Logo" width={40} height={40} />
             <span className="text-xl font-semibold text-white">PubCrawlZadar</span>
           </div>
           <p className="text-sm">
