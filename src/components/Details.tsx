@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Details() {
     return (
         <>
-        <section className="max-w-6xl h-fit mx-auto text-white py-16 px-5">
+        <section id="details" className="max-w-6xl h-fit mx-auto text-white py-16 px-5">
       <div className="relative flex flex-col md:flex-row items-start md:items-start md:justify-between overflow-x-hidden">
        
         <div className="absolute z-1 right-1/2 translate-x-1/2 top-8 -rotate-20 md:hidden">

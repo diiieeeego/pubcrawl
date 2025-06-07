@@ -12,8 +12,8 @@ export default function Footer(){
         {/* Logo & Message */}
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Image src="/logoPC.png" alt="Logo" width={40} height={40} />
-            <span className="text-xl font-semibold text-white">PubCrawlZadar</span>
+            <Image src="/logo.png" alt="Logo" width={100} height={100} />
+            
           </div>
           <p className="text-sm">
             Inspiring journeys, unforgettable memories. Let&apos;s explore the world together.
@@ -25,9 +25,10 @@ export default function Footer(){
           <h4 className="text-white font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-2 text-sm">
             <li><Link href="/" className="hover:text-white">Home</Link></li>
-            <li><Link href="/stops" className="hover:text-white">Stops</Link></li>
-            <li><Link href="/gallery" className="hover:text-white">Gallery</Link></li>
-            <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
+            <li><Link href="#stops" className="hover:text-white">Stops</Link></li>
+            <li><Link href="#details" className="hover:text-white">Details</Link></li>
+            <li><Link href="#gallery" className="hover:text-white">Gallery</Link></li>
+            <li><Link href="#contact" className="hover:text-white">Contact</Link></li>
           </ul>
         </div>
 

@@ -26,9 +26,9 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
                 <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
                     <Image
-                        src={"/logoPC.png"}
+                        src={"/logo.png"}
                         alt={"logo"}
-                        width={75}
+                        width={90}
                         height={75}
                         draggable={false}
                         priority
@@ -38,6 +38,8 @@ export default function Navbar() {
                 <div className="hidden md:flex items-center gap-4 uppercase ">
                     <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="/">Home</Link>
                     <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#stops">Stops</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#details">Details</Link>
+                    <Link className="rounded-full p-2 px-4 bg-[#fff]/20" href="#gallery">Gallery</Link>
                     <Link className="rounded-full p-2 px-4 bg-[#1AB3E6] text-neutral-800" href="#contact">Contact</Link>
                 </div>
                 <div className="md:hidden relative">
@@ -76,6 +78,20 @@ export default function Navbar() {
                             onClick={toggleMenu}
                         >
                             Stops
+                        </Link>
+                        <Link
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'
+                            href="#details"
+                            onClick={toggleMenu}
+                        >
+                            Details
+                        </Link>
+                        <Link
+                            className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'
+                            href="#gallery"
+                            onClick={toggleMenu}
+                        >
+                            Gallery
                         </Link>
                         <Link
                             className='w-full p-4 hover:bg-[#1AB3E6] transition-colors duration-200'

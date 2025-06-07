@@ -6,7 +6,7 @@ import Image from 'next/image';
 
 export default function Gallery(){
     return(
-        <section className="relative text-white py-20 px-4 md:px-20">
+        <section id="gallery" className="relative text-white py-20 px-4 md:px-20">
             <span className='w-64 sm:w-100 absolute top-0 left-1/2 -translate-x-1/2 h-1 bg-neutral-50 rounded-full'></span>
       <div className="text-center mb-10">
         <h2 className="text-3xl md:text-5xl font-bold uppercase mb-4">See Our Gallery</h2>
