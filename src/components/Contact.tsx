@@ -1,6 +1,6 @@
 "use client"
 import { useState } from 'react';
-
+import Image from "next/image"
 export default function Contact(){
     const [formData, setFormData] = useState({
         name: '',
@@ -21,8 +21,30 @@ export default function Contact(){
         // Implement form submission logic here
       };
     return(
+      <>
+      <div className="w-full h-[450px]">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d671.0584250893744!2d15.223486749695995!3d44.115251108643626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa6de8461883%3A0x6a0096312587a124!2sRimski%20forum%2C%20Zadar!5e0!3m2!1shr!2shr!4v1749210796703!5m2!1shr!2shr" 
+        className="w-full h-full"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
+    </div>
+      
         <section id="contact" className="text-white py-20 px-4 md:px-20">
-      <div className="max-w-4xl mx-auto">
+        
+
+      <div className="relative max-w-4xl mx-auto">
+      <div className="absolute z-[999] left-0 -top-26">
+        <Image
+          src={"/arrow.png"}
+          width={100}
+          height={300}
+          alt="arrow"
+        />
+        </div>
         <h2 className="text-5xl font-bold uppercase mb-4 text-center">
           Contact <br /> <span className="text-white">Us</span>
         </h2>
@@ -120,5 +142,6 @@ export default function Contact(){
         </form>
       </div>
     </section>
+    </>
     )
 }

@@ -7,7 +7,7 @@ export default function Details() {
        
         <div className="absolute z-1 right-1/2 translate-x-1/2 top-8 -rotate-20 md:hidden">
           <Image
-            src="/details.jpg" // Replace with your image path
+            src="/detailsDark.jpg" // Replace with your image path
             alt="Party scene"
             width={200}
             height={300}
@@ -59,16 +59,7 @@ export default function Details() {
         </div>
       </div>
     </section>
-    <div className="w-full h-[450px]">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d671.0584250893744!2d15.223486749695995!3d44.115251108643626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4761fa6de8461883%3A0x6a0096312587a124!2sRimski%20forum%2C%20Zadar!5e0!3m2!1shr!2shr!4v1749210796703!5m2!1shr!2shr" 
-        className="w-full h-full"
-        style={{ border: 0 }}
-        allowFullScreen
-        loading="lazy"
-        referrerPolicy="no-referrer-when-downgrade"
-      />
-    </div>
+    
     </>
     )
 }

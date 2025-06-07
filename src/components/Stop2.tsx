@@ -1,8 +1,18 @@
 
+import Image from "next/image"
 
 export default function Stop2(){
     return(
-        <section className="max-w-6xl mx-auto">
+        <section className="relative max-w-6xl mx-auto">
+          <div className="absolute z-[999] left-1/2 -translate-x-1/2 md:left-0 md:translate-0 -top-20   md:-top-50 ">
+        <Image
+          src={"/arrow.png"}
+          width={250}
+          height={400}
+          alt="arrow"
+          className="w-30 md:w-50"
+        />
+        </div>
         <div className="w-full md:w-4/5 ms-auto py-16 h-fit  bg-[url('/stop2.jpg')] bg-cover bg-no-repeat bg-center px-5 md:p-32 pt-20 md:pt-40">
            
             <span className="rounded-full px-5 py-2 bg-red-500/80 text-neutral-50 text-2xl font-bold">STOP 2</span>
