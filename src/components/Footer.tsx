@@ -12,7 +12,7 @@ export default function Footer(){
         {/* Logo & Message */}
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Image src="/logo.png" alt="Logo" width={100} height={100} />
+            <Image src="/logoBest1.png" alt="Logo" width={100} height={100} />
             
           </div>
           <p className="text-sm">
