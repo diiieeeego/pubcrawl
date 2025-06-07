@@ -4,7 +4,7 @@ import Image from "next/image"
 export default function Stop2(){
     return(
         <section className="relative max-w-6xl mx-auto">
-          <div className="absolute z-[999] left-1/2 -translate-x-1/2 md:left-0 md:translate-0 -top-20   md:-top-50 ">
+          <div className="absolute z-[998] left-1/2 -translate-x-1/2 md:left-0 md:translate-0 -top-20   md:-top-50 ">
         <Image
           src={"/arrow.png"}
           width={250}

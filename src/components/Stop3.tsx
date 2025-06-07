@@ -2,7 +2,7 @@ import Image from "next/image"
 export default function Stop3() {
     return (
         <section className="relative py-16 md:py-32 space-y-8 max-w-6xl mx-auto px-5 h-fit md:h-screen">
-            <div className="absolute z-[999] right-10 lg:right-2/3 -top-20 ">
+            <div className="absolute z-[998] right-10 lg:right-2/3 -top-20 ">
                 <Image
                     src={"/arrow.png"}
                     width={250}

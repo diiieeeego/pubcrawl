@@ -4,7 +4,7 @@ import { MoveRight } from "lucide-react"
 export default function Stop1() {
     return (
         <section id="stop1" className="relative z-50 max-w-6xl mx-auto px-5 h-fit py-16">
-            <div className="absolute z-[999] md:left-1/2  md:-translate-x-1/2 -top-30 -rotate-40 md:-rotate-20">
+            <div className="absolute z-[998] md:left-1/2  md:-translate-x-1/2 -top-30 -rotate-40 md:-rotate-20">
         <Image
           src={"/arrowl.png"}
           width={250}

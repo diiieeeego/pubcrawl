@@ -32,7 +32,7 @@ export default function Details() {
             THE <br /> DETAILS
           </h2>
 
-          <div className="space-y-6 text-base md:text-lg text-shadow">
+          <div className="space-y-6 text-base text-lg text-shadow">
             <div className="flex flex-col md:flex-row md:gap-4">
               <span className="font-semibold">When do we work?</span>
               <span>
