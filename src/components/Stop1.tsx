@@ -3,7 +3,7 @@ import Link from "next/link"
 import { MoveRight } from "lucide-react"
 export default function Stop1() {
     return (
-        <section id="stop1" className="relative z-50 max-w-6xl mx-auto px-5 h-screen py-10">
+        <section id="stop1" className="relative z-50 max-w-6xl mx-auto px-5 h-fit py-16">
             <div className="relative">
                 {/* Background Image */}
                 <div className="absolute top-0 right-1/2 md:right-10 md:w-1/4">
@@ -12,14 +12,14 @@ export default function Stop1() {
                         alt="stop1"
                         width={200}
                         height={400}
-                        className="w-full h-auto rotate-20 translate-x-20 rounded-lg md:hidden"
+                        className="w-full h-auto max-h-100 rotate-20 translate-x-20 rounded-lg md:hidden"
                     />
                     <Image
                         src="/stop11.jpg"
                         alt="stop11"
                         width={200}
                         height={400}
-                        className="w-full h-auto rounded-lg hidden md:block"
+                        className="w-full h-auto lg:h-110 rounded-lg hidden md:block"
                     />
                 </div>
 

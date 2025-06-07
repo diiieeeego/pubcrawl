@@ -1,6 +1,6 @@
 export default function Stop3() {
     return (
-        <section className="py-32 space-y-8 max-w-6xl mx-auto px-5">
+        <section className="py-16 md:py-32 space-y-8 max-w-6xl mx-auto px-5 h-fit md:h-screen">
             <div className="w-full lg:w-3/5 md:ms-auto">
                 <span className="rounded-full px-5 py-2 bg-red-500/80 text-neutral-50 text-lg font-bold">STOP 3</span>
                 <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-neutral-50 my-8 xs:mt-0 text-shadow">

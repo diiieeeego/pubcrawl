@@ -20,7 +20,7 @@ export default function Header() {
                 </div>
 
             </section>
-            <Link href="#stops" className="w-full bounce flex flex-col gap-2 items-center mt-10 md:mt-30">
+            <Link href="#stops" className="w-full bounce flex flex-col gap-2 items-center mt-10 md:mt-20">
                 <span >See More</span>
                 <BsArrowDownCircle className="" size={32} />
             </Link>

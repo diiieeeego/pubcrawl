@@ -1,6 +1,6 @@
 export default function BonusStop() {
     return (
-        <section className="max-w-6xl mx-auto space-y-16 pb-16 px-5">
+        <section className="max-w-6xl mx-auto space-y-16 py-16 md:py-32 px-5 h-fit">
             
             <div className="">
                 <span className="rounded-full px-5 py-2 bg-red-500/80 text-neutral-50 text-lg font-bold">BONUS STOP</span>
