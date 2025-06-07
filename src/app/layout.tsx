@@ -18,6 +18,7 @@ export const metadata: Metadata = {
   description: "Pub Crawl Zadar Website",
 };
 
+
 export default function RootLayout({
   children,
 }: Readonly<{

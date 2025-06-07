@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://pubcrawl-pi.vercel.app
+
+# Sitemaps
+Sitemap: https://pubcrawl-pi.vercel.app/sitemap.xml
