@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
                 <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
                     <Image
-                        src={"/logoBest1.png"}
+                        src={"/logoNEW.png"}
                         alt={"logo"}
                         width={90}
                         height={75}
