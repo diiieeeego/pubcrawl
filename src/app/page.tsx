@@ -41,7 +41,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <div className="bg-[#231F20]">
+    <>
       <Header />
       <Stops />
       <Stop1 />
@@ -51,6 +51,6 @@ export default function Home() {
       <Details />
       <Contact />
       <Gallery />
-    </div>
+    </>
   );
 }
