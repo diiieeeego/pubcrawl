@@ -1,7 +1,11 @@
 'use client';
 
 import Link from 'next/link';
-import { Facebook, Instagram, Youtube, MapPin } from 'lucide-react';
+import { FaFacebookF } from 'react-icons/fa';
+import { FaTripadvisor } from 'react-icons/fa';
+import { FaInstagram } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa';
+
 import Image from 'next/image';
 
 export default function Footer(){
@@ -12,7 +16,7 @@ export default function Footer(){
         {/* Logo & Message */}
         <div>
           <div className="flex items-center space-x-3 mb-4">
-            <Image src="/logoBest1.png" alt="Logo" width={100} height={100} />
+            <Image src="/logo1.png" alt="Logo" width={100} height={100} />
             
           </div>
           <p className="text-sm">
@@ -37,16 +41,16 @@ export default function Footer(){
           <h4 className="text-white font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
             <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-white">
-              <Facebook />
+            <FaFacebookF />
             </Link>
             <Link href="https://instagram.com" aria-label="Instagram" className="hover:text-white">
-              <Instagram />
+            <FaInstagram />
             </Link>
             <Link href="https://tiktok.com" aria-label="TikTok" className="hover:text-white">
-              <Youtube />
+            <FaTiktok />
             </Link>
-            <Link href="https://tripadvisor.com" aria-label="TripAdvisor" className="hover:text-white">
-              <MapPin /> 
+            <Link href="#" className="hover:text-gray-400" aria-label="Tripadvisor">
+            <FaTripadvisor />
             </Link>
           </div>
         </div>

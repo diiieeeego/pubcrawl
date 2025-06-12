@@ -15,7 +15,7 @@ export default function Header() {
                         <span className="rounded-full px-4 py-2 bg-[#EF472F]/80 text-neutral-50">20% DISCOUNT</span>
                     </div>
                 </div>
-                <div className="w-full lg:w-auto mt-8 lg:mt-0 flex justify-center px-5">
+                <div className="w-full lg:w-auto mt-8 lg:mt-0 flex justify-center px-5 hidden">
                     <Schedule />
                 </div>
 

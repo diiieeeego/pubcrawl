@@ -1,6 +1,7 @@
 "use client"
 import { useState } from 'react';
 import Image from "next/image"
+import Link from "next/link"
 export default function Contact(){
     const [formData, setFormData] = useState({
         name: '',
@@ -15,11 +16,11 @@ export default function Contact(){
         setFormData({ ...formData, [e.target.name]: e.target.value });
       };
     
-      const handleSubmit = (e: React.FormEvent) => {
-        e.preventDefault();
-        console.log(formData);
-        // Implement form submission logic here
-      };
+        const handleSubmit = async (e: React.FormEvent) => {
+          e.preventDefault();
+          console.log(formData);
+          //dodaj kod iz dokumenta PubCrawlZadar
+        };
     return(
       <>
       <div className="w-full h-[450px]">
@@ -53,8 +54,8 @@ export default function Contact(){
             Feel free to contact us if you have any questions! We&apos;re here to help make your experience in Zadar as awesome as possible.
           </p>
           <div className="mt-4 md:mt-0 text-left">
-            <p>Phone: <a href="tel:+385997729401" className="text-neutral-400 underline">+385 99 7729 401</a></p>
-            <p>Email: <a href="mailto:pubcrawlzadarinfo@gmail.com" className="text-neutral-400 underline">pubcrawlzadarinfo@gmail.com</a></p>
+            <p>Phone: <Link href="tel:+385997729401" className="text-neutral-400 underline">+385 91 329 5113</Link></p>
+            <p>Email: <Link href="mailto:pubcrawlzadarinfo@gmail.com" className="text-neutral-400 underline">pubcrawlzadarinfo@gmail.com</Link></p>
           </div>
         </div>
 

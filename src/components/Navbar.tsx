@@ -26,7 +26,7 @@ export default function Navbar() {
             <div className="max-w-6xl mx-auto py-5 pt-10 px-3 flex items-center justify-between">
                 <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
                     <Image
-                        src={"/logoBest1.png"}
+                        src={"/logo1.png"}
                         alt={"logo"}
                         width={90}
                         height={75}
@@ -106,38 +106,38 @@ export default function Navbar() {
                         <span className='font-bold text-xl'>Follow Us</span>
 
                         <div className="flex justify-center gap-6 mt-8">
-                            <a
+                            <Link
                                 href="https://instagram.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
                             >
                                 <FaInstagram />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="https://tiktok.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
                             >
                                 <FaTiktok />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="https://tripadvisor.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
                             >
                                 <FaTripadvisor />
-                            </a>
-                            <a
+                            </Link>
+                            <Link
                                 href="https://facebook.com"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
                             >
                                 <FaFacebookF />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
