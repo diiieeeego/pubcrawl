@@ -9,7 +9,7 @@ export async function POST(req: Request) {
   try {
     await resend.emails.send({
       from: 'onboarding@resend.dev', // Or your verified domain email
-      to: 'jakov.bilac1@gmail.com',
+      to: 'pubcrawlzadarinfo@gmail.com',
       subject: `Message from ${name}`,
       replyTo: email,
       text: `Novi upit za Vas od ${name}, \nEmail: ${email} \nMobitel: ${phone}\nDatum: ${date}\nBroj osoba: ${attendees}\n ${message}\n\nVaš resend dev team <3`,

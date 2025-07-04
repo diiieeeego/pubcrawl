@@ -19,7 +19,31 @@ export default function Contact(){
         const handleSubmit = async (e: React.FormEvent) => {
           e.preventDefault();
           console.log(formData);
-          //dodaj kod iz dokumenta PubCrawlZadar
+          try {
+            const res = await fetch('/api/contact', {
+              method: 'POST',
+              headers: { 'Content-Type': 'application/json' },
+              body: JSON.stringify(formData),
+            });
+        
+            if (res.ok) {
+              alert('Message sent!');
+              setFormData({
+                name: '',
+                email: '',
+                phone: '',
+                attendees: '1',
+                date: '',
+                message: '',
+              });
+            } else {
+              alert('Failed to send. Please try again later.');
+            }
+          } catch (error) {
+            console.error('Submit error:', error);
+            alert('Something went wrong.');
+          }
+
         };
     return(
       <>
