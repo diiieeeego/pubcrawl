@@ -107,7 +107,7 @@ export default function Navbar() {
 
                         <div className="flex justify-center gap-6 mt-8">
                             <Link
-                                href="https://instagram.com"
+                                href="https://www.instagram.com/pubcrawlzadar/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
@@ -123,7 +123,7 @@ export default function Navbar() {
                                 <FaTiktok />
                             </Link>
                             <Link
-                                href="https://tripadvisor.com"
+                                href="https://www.tripadvisor.com/Attraction_Review-g295374-d12538014-Reviews-Pub_Crawl_Zadar-Zadar_Zadar_County_Dalmatia.html"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"
@@ -131,7 +131,7 @@ export default function Navbar() {
                                 <FaTripadvisor />
                             </Link>
                             <Link
-                                href="https://facebook.com"
+                                href="https://www.facebook.com/PubCrawlZadar/?locale=hr_HR"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="text-2xl hover:text-[#1AB3E6] transition-colors duration-200"

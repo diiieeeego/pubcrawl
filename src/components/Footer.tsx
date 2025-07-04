@@ -40,16 +40,16 @@ export default function Footer(){
         <div>
           <h4 className="text-white font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-4">
-            <Link href="https://facebook.com" aria-label="Facebook" className="hover:text-white">
+            <Link href="https://www.facebook.com/PubCrawlZadar/?locale=hr_HR" aria-label="Facebook" className="hover:text-white" target="_blank">
             <FaFacebookF />
             </Link>
-            <Link href="https://instagram.com" aria-label="Instagram" className="hover:text-white">
+            <Link href="https://www.instagram.com/pubcrawlzadar/" aria-label="Instagram" className="hover:text-white" target="_blank">
             <FaInstagram />
             </Link>
-            <Link href="https://tiktok.com" aria-label="TikTok" className="hover:text-white">
+            <Link href="https://tiktok.com" aria-label="TikTok" className="hover:text-white" target="_blank">
             <FaTiktok />
             </Link>
-            <Link href="#" className="hover:text-gray-400" aria-label="Tripadvisor">
+            <Link href="https://www.tripadvisor.com/Attraction_Review-g295374-d12538014-Reviews-Pub_Crawl_Zadar-Zadar_Zadar_County_Dalmatia.html" className="hover:text-gray-400" aria-label="Tripadvisor" target="_blank">
             <FaTripadvisor />
             </Link>
           </div>
