@@ -56,7 +56,7 @@ export default function Footer(){
         </div>
 
         {/* Optional Contact Info or Newsletter */}
-        <div>
+        <div className="hidden">
           <h4 className="text-white font-semibold mb-4">Stay Connected</h4>
           <p className="text-sm mb-2">Subscribe to get the latest updates and offers.</p>
           <form className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-2">
