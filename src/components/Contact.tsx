@@ -78,7 +78,7 @@ export default function Contact(){
             Feel free to contact us if you have any questions! We&apos;re here to help make your experience in Zadar as awesome as possible.
           </p>
           <div className="mt-4 md:mt-0 text-left">
-            <p>Phone: <Link href="tel:+385997729401" className="text-neutral-400 underline">+385 91 329 5113</Link></p>
+            <p>Phone: <Link href="tel:+385913295113" className="text-neutral-400 underline">+385 91 329 5113</Link></p>
             <p>Email: <Link href="mailto:pubcrawlzadarinfo@gmail.com" className="text-neutral-400 underline">pubcrawlzadarinfo@gmail.com</Link></p>
           </div>
         </div>
