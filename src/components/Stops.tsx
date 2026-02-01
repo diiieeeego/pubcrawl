@@ -10,7 +10,7 @@ export default function Stops() {
             </p>
             <div className=" relative w-full h-[400px] rounded-lg overflow-hidden bg-[url('/stops.jpg')] bg-cover bg-no-repeat">
                 <h2 className="text-4xl font-bold absolute top-1/2 left-1/2 -translate-1/2 text-shadow">3 Stops + Bonus Stop</h2>
-                <Link href="#stop1" className="absolute z-[999] bottom-5 left-1/2 -translate-x-1/2 bounce flex flex-col gap-2 items-center">
+                <Link href="#stop1" className="absolute z-[998] bottom-5 left-1/2 -translate-x-1/2 bounce flex flex-col gap-2 items-center">
                     <span>1. stop</span>
                     <BsArrowDownCircle className="" size={32} />
                 </Link>

@@ -62,7 +62,7 @@ export default function Contact(){
         
 
       <div className="relative max-w-4xl mx-auto">
-      <div className="absolute z-[999] left-0 -top-26">
+      <div className="absolute z-[998] left-0 -top-26">
         <Image
           src={"/arrow.png"}
           width={100}
