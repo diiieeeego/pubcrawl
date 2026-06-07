@@ -1,82 +1,159 @@
 'use client';
 
 import Link from 'next/link';
-import { FaFacebookF } from 'react-icons/fa';
-import { FaTripadvisor } from 'react-icons/fa';
-import { FaInstagram } from 'react-icons/fa';
-import { FaTiktok } from 'react-icons/fa';
-
 import Image from 'next/image';
+import { FaFacebookF, FaTripadvisor, FaInstagram } from 'react-icons/fa';
+import { MapPin, Phone, Mail, Cookie } from 'lucide-react';
 
-export default function Footer(){
+const navLinks = [
+  { label: 'Home', href: '/' },
+  { label: 'Stops', href: '#stops' },
+  { label: 'Details', href: '#details' },
+  { label: 'Gallery', href: '#gallery' },
+  { label: 'Contact', href: '#contact' },
+];
+
+const socialLinks = [
+  {
+    href: 'https://www.facebook.com/PubCrawlZadar/?locale=hr_HR',
+    label: 'Facebook',
+    icon: FaFacebookF,
+  },
+  {
+    href: 'https://www.instagram.com/pubcrawlzadar/',
+    label: 'Instagram',
+    icon: FaInstagram,
+  }
+];
+
+export default function Footer() {
+  const openCookieSettings = () => {
+    window.dispatchEvent(new CustomEvent('open-cookie-settings'));
+  };
+
   return (
-    <footer className="bg-[#231F20] text-gray-300 py-10 px-5 lg:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-4 gap-10">
-        
-        {/* Logo & Message */}
-        <div>
-          <div className="flex items-center space-x-3 mb-4">
-            <Image src="/PubCrawlLogo.png" alt="Logo" width={100} height={100} />
-            
-          </div>
-          <p className="text-sm">
-            Inspiring journeys, unforgettable memories. Let&apos;s explore the world together.
-          </p>
-        </div>
+    <footer className="bg-[#1a1718] text-gray-400 relative overflow-hidden">
+      {/* Top accent */}
+      <div className="h-px w-full bg-gradient-to-r from-transparent via-[#1AB3E6]/40 to-transparent" />
 
-        {/* Quick Links */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">Quick Links</h4>
-          <ul className="space-y-2 text-sm">
-            <li><Link href="/" className="hover:text-white">Home</Link></li>
-            <li><Link href="#stops" className="hover:text-white">Stops</Link></li>
-            <li><Link href="#details" className="hover:text-white">Details</Link></li>
-            <li><Link href="#gallery" className="hover:text-white">Gallery</Link></li>
-            <li><Link href="#contact" className="hover:text-white">Contact</Link></li>
-          </ul>
-        </div>
+      {/* Subtle background glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[200px] bg-[#1AB3E6]/3 rounded-full blur-3xl pointer-events-none" />
 
-        {/* Social Networks */}
-        <div>
-          <h4 className="text-white font-semibold mb-4">Follow Us</h4>
-          <div className="flex space-x-4">
-            <Link href="https://www.facebook.com/PubCrawlZadar/?locale=hr_HR" aria-label="Facebook" className="hover:text-white" target="_blank">
-            <FaFacebookF />
-            </Link>
-            <Link href="https://www.instagram.com/pubcrawlzadar/" aria-label="Instagram" className="hover:text-white" target="_blank">
-            <FaInstagram />
-            </Link>
-            <Link href="https://tiktok.com" aria-label="TikTok" className="hover:text-white" target="_blank">
-            <FaTiktok />
-            </Link>
-            <Link href="https://www.tripadvisor.com/Attraction_Review-g295374-d12538014-Reviews-Pub_Crawl_Zadar-Zadar_Zadar_County_Dalmatia.html" className="hover:text-gray-400" aria-label="Tripadvisor" target="_blank">
-            <FaTripadvisor />
-            </Link>
-          </div>
-        </div>
+      <div className="relative max-w-6xl mx-auto px-6 pt-16 pb-10">
+        {/* Main grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-14">
 
-        {/* Optional Contact Info or Newsletter */}
-        <div className="hidden">
-          <h4 className="text-white font-semibold mb-4">Stay Connected</h4>
-          <p className="text-sm mb-2">Subscribe to get the latest updates and offers.</p>
-          <form className="flex flex-col sm:flex-row sm:flex-wrap items-center gap-2">
-            <input
-              type="email"
-              placeholder="Your email"
-              className="px-3 py-2 rounded-md bg-gray-800 text-white text-sm w-full sm:w-auto"
+          {/* Brand */}
+          <div className="lg:col-span-2">
+            <div className="flex items-center justify-start gap-6">
+              <Image
+              src="/pubcrawl_logo.png"
+              alt="Pub Crawl Zadar Logo"
+              width={90}
+              height={90}
+              className="mb-5 opacity-90"
             />
-            <button className="bg-[#1AB3E6]/80 hover:bg-[#1AB3E6] cursor-pointer hover:shadow-lg text-white px-4 py-2 rounded-md text-sm">
-              Subscribe
-            </button>
-          </form>
+            <p className='text-lg md:text-xl'>PubCrawl Zadar</p>
+            </div>
+            <p className="text-sm leading-relaxed text-gray-400 max-w-xs mb-6">
+              The ultimate nightlife experience in Zadar. Discover the best bars and clubs with
+              local guides, exclusive drink deals, and fellow travellers from around the world.
+            </p>
+
+            {/* Contact info */}
+            <ul className="space-y-2.5 text-sm">
+              <li className="flex items-center gap-2.5 text-gray-500">
+                <MapPin size={14} className="text-[#1AB3E6] flex-shrink-0" />
+                <span>Zadar, Croatia</span>
+              </li>
+              <li className="flex items-center gap-2.5 text-gray-500">
+                <Phone size={14} className="text-[#1AB3E6] flex-shrink-0" />
+                <a href="tel:+385913295113" className="hover:text-white transition-colors">
+                  +385 91 329 5113
+                </a>
+              </li>
+              <li className="flex items-center gap-2.5 text-gray-500">
+                <Mail size={14} className="text-[#1AB3E6] flex-shrink-0" />
+                <a href="mailto:pubcrawlzadarinfo@gmail.com" className="hover:text-white transition-colors">
+                  pubcrawlzadarinfo@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Navigation */}
+          <div>
+            <h4 className="text-white text-xs font-semibold uppercase tracking-widest mb-5">
+              Navigation
+            </h4>
+            <ul className="space-y-3">
+              {navLinks.map(({ label, href }) => (
+                <li key={label}>
+                  <Link
+                    href={href}
+                    className="text-sm text-gray-400 hover:text-white transition-colors hover:translate-x-1 inline-flex items-center gap-1.5 group"
+                  >
+                    <span className="w-0 group-hover:w-2 h-px bg-[#1AB3E6] transition-all duration-200 inline-block" />
+                    {label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Social */}
+          <div>
+            <h4 className="text-white text-xs font-semibold uppercase tracking-widest mb-5">
+              Follow Us
+            </h4>
+            <div className="flex flex-col gap-3">
+              {socialLinks.map(({ href, label, icon: Icon }) => (
+                <Link
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={label}
+                  className="flex items-center gap-3 group"
+                >
+                  <span className="w-9 h-9 rounded-xl bg-white/5 border border-white/8 flex items-center justify-center text-gray-400 group-hover:bg-[#1AB3E6]/15 group-hover:border-[#1AB3E6]/30 group-hover:text-[#1AB3E6] transition-all duration-200">
+                    <Icon size={14} />
+                  </span>
+                  <span className="text-sm text-gray-500 group-hover:text-white transition-colors">
+                    {label}
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
 
-      </div>
+        {/* Divider */}
+        <div className="h-px bg-white/6 mb-7" />
 
-      <div className="mt-10 text-center text-xs text-gray-500">
-        © {new Date().getFullYear()} PubCrawlZadar. All rights reserved.
+        {/* Bottom bar */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+          <span>
+            © {new Date().getFullYear()} Pub Crawl Zadar. All rights reserved.
+          </span>
+
+          <div className="flex items-center gap-5 flex-wrap justify-center">
+            <Link href="/privacy-policy" className="hover:text-gray-400 transition-colors">
+              Privacy Policy
+            </Link>
+            <Link href="/terms" className="hover:text-gray-400 transition-colors">
+              Terms of Service
+            </Link>
+            <button
+              onClick={openCookieSettings}
+              className="flex items-center gap-1.5 hover:text-[#1AB3E6] transition-colors group"
+            >
+              <Cookie size={12} className="group-hover:rotate-12 transition-transform duration-200" />
+              Cookie Settings
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
   );
-};
-
+}

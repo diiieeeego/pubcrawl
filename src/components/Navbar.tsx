@@ -48,14 +48,14 @@ export default function Navbar() {
         <nav className={`fixed top-0 left-0 w-full z-[999] transition-all duration-300 bg-neutral-800/0 ${
             scrolled 
             ? "bg-neutral-800/90  shadow-lg" // Izgled kada se skroluje
-            : " py-5 pt-5" // Početni izgled
+            : "" // Početni izgled
         }`}>
             <div className="max-w-6xl mx-auto py-5 px-5 flex items-center justify-between transition-all duration-300 ">
                 <div onContextMenu={(e) => e.preventDefault()} className="flex items-center gap-2 text-neutral-50 uppercase font-bold">
                     <Image
-                        src={"/PubCrawlLogo.png"}
+                        src={"/pubcrawl_logo.png"}
                         alt={"logo"}
-                        width={scrolled ? 70 : 90} // Malo se smanji logo pri skrolu radi estetike
+                        width={scrolled ? 50 : 70} // Malo se smanji logo pri skrolu radi estetike
                         height={75}
                         className="transition-all duration-300"
                         draggable={false}
